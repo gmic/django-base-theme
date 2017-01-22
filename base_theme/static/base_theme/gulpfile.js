@@ -15,24 +15,24 @@ var gzip_options = {
 
 /* Compile Our Sass */
 gulp.task('sass', function() {
-    return gulp.src('base_theme/scss/*.scss')
+    return gulp.src('scss/scss/*.scss')
         .pipe(sass())
-        .pipe(gulp.dest('assets'))
+        .pipe(gulp.dest('scss/compiled_css'))
         .pipe(rename({suffix: '.min'}))
         .pipe(minifycss())
-        .pipe(gulp.dest('assets'))
+        .pipe(gulp.dest('scss/compiled_css'))
         .pipe(gzip(gzip_options))
-        .pipe(gulp.dest('assets'))
+        .pipe(gulp.dest('scss/compiled_css'))
         .pipe(livereload());
 });
 
 /* Watch Files For Changes */
 gulp.task('watch', function() {
     livereload.listen();
-    gulp.watch('base_theme/scss/*.scss', ['sass']);
+    gulp.watch('scss/scss/**/*.scss', ['sass']);
 
     /* Trigger a live reload on any Django template changes */
-    gulp.watch('**/templates/*').on('change', livereload.changed);
+    // gulp.watch('**/templates/*').on('change', livereload.changed);
 
 });
 

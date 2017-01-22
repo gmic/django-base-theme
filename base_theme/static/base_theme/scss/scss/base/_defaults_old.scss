@@ -28,9 +28,18 @@
  /*------------------------------------*\
     #BODY, HTML
 \*------------------------------------*/
+   
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
 
 body {
 	margin-top: 50px;
+	background: #fff;
 }
 	
 body, 
@@ -53,10 +62,11 @@ html {
 }
    
 p {
-    @extend .text_styles;
+  @extend .text_styles;
 	@include font-size(18px);
 	line-height: 1.5em;
 	margin: 0 0 1.5em 0;
+	color: #4d4d4d;
 }
 
 /*------------------------------------*\
@@ -120,7 +130,43 @@ h6 {
 	 @include smoothing;
 }
 
+h1 {
+	font-family: $pal;
+	font-size: 2.5em;
+	line-height: 1;
+	color: #1a1a1a;
+}
+
+h2 {
+	font-family: $helvMedi;
+	font-size: 1.625em;
+	color: #333333;
+}
+
+h3 {
+	font-family: $helvLigh;
+	font-size: 1.7em;
+	color: #0e76bc;
+}
+
+h4 {
+	font-family: $helvlt;
+	font-size: 1.75em;
+	font-weight: normal;
+	color: #4d4d4d;
+	letter-spacing: 0.05em;
+}
+
+h5 {
+	font-family: $helvMedi;
+	font-size: 1.313em;
+	color: #262626;
+}
+
 h6 {
+	font-family: $helvBold;
+	font-size: 1.125em;
+	color: #54afdb;
 	text-transform: uppercase;
 }
 
@@ -130,6 +176,7 @@ h6 {
 
 a {
 	font-family: $roma;
+	color: $red;
 	outline: 0;
 	&:hover, &:focus {
 		text-decoration: none;
@@ -155,6 +202,7 @@ h6 a {
 \*------------------------------------*/
 
 strong, b {
+	color: #1b1b1b;
 	font-family: $roma;
 	@include smoothing;
 }

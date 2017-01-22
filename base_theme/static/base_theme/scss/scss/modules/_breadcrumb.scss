@@ -15,11 +15,9 @@
 
 #breadcrumb {
 	.container {
-		background-color: #f5f5f5;
 	}
 	.breadcrumb {
-		margin-bottom:0px;
-		padding-left: 0px;
+		background-color: #fff;
 		@include font-size(19px);
 	}
 	@include small {

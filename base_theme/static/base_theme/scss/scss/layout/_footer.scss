@@ -19,7 +19,7 @@
 #footer {
 	.container {
 		@include linear-gradient(#2e55a4,#0d2c68);
-		min-height: 300px;
+		min-height: 100px;
 		height: 100%;
 	}
 }

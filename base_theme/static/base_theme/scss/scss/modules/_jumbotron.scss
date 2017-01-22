@@ -1,0 +1,36 @@
+/*****
+ * TABLE OF CONTENTS
+ *
+ * JUMBOTRON
+ *   - Image
+ *   - Fonts
+ *
+ *****/
+
+/*------------------------------------*\
+    #Image
+\*------------------------------------*/
+
+.jumbotron {
+  background-size: cover;
+}
+
+/*------------------------------------*\
+    #Fonts
+\*------------------------------------*/
+
+.jumbotron-dark {
+  background-color: darkgray;
+  h2 {
+	font-size: 2.7em;
+    color: $offWhite;
+    letter-spacing: 0em;
+  }
+  p {
+    color: $offWhite;
+  }
+}
+
+.jumbotron-light {
+  background-color: $offWhite;
+}
