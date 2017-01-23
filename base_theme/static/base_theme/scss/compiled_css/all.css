@@ -5600,6 +5600,25 @@ footer {
 #top-nav .dropdown-menu > li > a {
   color: #b4b4b4; }
 
+.navbar-brand {
+  position: absolute;
+  width: 350px;
+  height: auto;
+  left: 0;
+  top: 0;
+  text-align: center;
+  margin: auto;
+  padding: 0px; }
+
+@media (min-width: 768px) {
+  .navbar-brand {
+    width: 100%;
+    padding: 20px; }
+  .navbar-nav {
+    margin-top: 130px; }
+  body {
+    margin-top: 180px; } }
+
 /*****
  * TABLE OF CONTENTS
  *
